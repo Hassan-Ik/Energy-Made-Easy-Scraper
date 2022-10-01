@@ -1,0 +1,4 @@
+#!C:\Users\hassa\Desktop\Upwork\Energy_Gov_Australia_Scraping\Energy-Made-Easy-Scraper\engenv\Scripts\python.exe
+
+from splash.server import main
+main()
