@@ -10,7 +10,6 @@ class EnergySpider(scrapy.Spider):
     allowed_domains = ['www.energymadeeasy.gov.au']
     
     user_agent = generate_user_agent()
-    
     headers =  {
             "authority": "api.energymadeeasy.gov.au",
             "method": "POST",
