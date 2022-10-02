@@ -24,8 +24,7 @@ class EnergySpider(scrapy.Spider):
             'User-Agent': user_agent
             # 'User-Agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Mobile Safari/537.36',
         }
-    # start_urls = ["https://api.energymadeeasy.gov.au/plans/dpids/prices", "https://api.energymadeeasy.gov.au/plans/dpids/GLO484003MRE1?postcode=2000"]
-
+    
     def start_requests(self):
         body = request_body()
         
