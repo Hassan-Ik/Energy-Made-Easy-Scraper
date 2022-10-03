@@ -1,6 +1,10 @@
-def request_body(fuel_type="E", post_code="2000", 
-                 state="NSW", suburb="Barangaroo", household_size="L", 
-                 customer_type="R", bill_mode="noUsageFrontier", terms_accepted=True):
+def body_for_api_request(fuel_type, post_code, 
+                 state, suburb, household_size, 
+                 customer_type, bill_mode, isMeterDataRetrived, meterDateInit,
+                 solarPanels, pool,underfloorHeating,
+                 gasMethod,gasHeater,smartMeter,peakOffpeakRates,
+                 controlledLoad,retailer_E,retailer_G,distributor_E,distributor_G,gasBillStartDate,gasBillEndDate,
+                 electricityBillStartDate,electricityBillEndDate, terms_accepted=True):
     """
     This function adds our search filters, or our form data in the api request.
     

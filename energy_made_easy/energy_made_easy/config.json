@@ -1,0 +1,56 @@
+{
+  "crawler_configuration": {
+    "use_proxy": true,
+    "proxy": null,
+    "save_as_excel": true,
+    "save_as_json": true
+  },
+  "scrap_all_energy_plans_internal_data": true,
+  "energymadeeasy_inputs": {
+    "fuel_type": "E",
+    "post_code": "2000",
+    "state": "NSW",
+    "suburb": "Barangaroo",
+    "household_size": "L",
+    "customer_type": "R",
+    "bill_mode": "noUsageFrontier",
+    "isMeterDataRetrieved": false,
+    "meterDataInit": false,
+    "solarPanels": "",
+    "pool": "",
+    "underfloorHeating": "",
+    "gasMethod": "",
+    "gasHeater": "",
+    "smartMeter": "N",
+    "peakOffpeakRates": "",
+    "controlledLoad": "N",
+    "retailer-E": "notSure",
+    "retailer-G": "",
+    "distributor-E": "",
+    "distributor-G": "",
+    "gasBillStartDate": "",
+    "gasBillEndDate": "",
+    "electricityBillStartDate": "",
+    "electricityBillEndDate": "",
+    "terms_accepted": true,
+    "factors": [
+      {
+        "factorName": "ac",
+        "answer": "N",
+        "fuelType": "E"
+      },
+      {
+        "factorName": "cl",
+        "answer": "N",
+        "fuelType": "E"
+      },
+      {
+        "factorName": "sp",
+        "answer": "N",
+        "fuelType": "E"
+      }
+    ],
+    "concessionsFromBills": {},
+    "benchmarkUsageType": ""
+  }
+}
