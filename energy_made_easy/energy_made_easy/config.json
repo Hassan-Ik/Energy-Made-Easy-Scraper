@@ -3,7 +3,8 @@
     "use_proxy": true,
     "proxy": null,
     "save_as_excel": true,
-    "save_as_json": true
+    "save_as_json": true,
+    "save_to_google_sheets": false
   },
   "scrap_all_energy_plans_internal_data": true,
   "energymadeeasy_inputs": {
