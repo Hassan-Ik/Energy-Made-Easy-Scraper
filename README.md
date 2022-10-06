@@ -10,7 +10,7 @@ User can give input to api request using `config.json` file provided in the scra
 
 Config.json file has following inputs:
 
-### 1- "crawler_configuration": For using proxies, saving scraped data in specific format.
+#### 1- "crawler_configuration": For using proxies, saving scraped data in specific format.
 
 "use_proxy": (true or false)
 "proxy": (null, or proxy),
@@ -18,9 +18,9 @@ Config.json file has following inputs:
 "save_as_json": (true or false),
 "save_to_google_sheets": (true or false)
 
-### 2- "scrap_all_energy_plans_internal_data": (true or false), # If want to scrap full details of the plans
+#### 2- "scrap_all_energy_plans_internal_data": (true or false), # If want to scrap full details of the plans
 
-### 3- "energymadeeasy_inputs": # data to give for api request
+#### 3- "energymadeeasy_inputs": # data to give for api request
 
 "fuel_type": "E",
 "post_code": "2000",
