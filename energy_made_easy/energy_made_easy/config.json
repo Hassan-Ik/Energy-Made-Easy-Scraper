@@ -6,7 +6,7 @@
     "save_as_json": true,
     "save_to_google_sheets": false
   },
-  "scrap_all_energy_plans_internal_data": true,
+  "scrap_all_energy_plans_internal_data": false,
   "energymadeeasy_inputs": {
     "fuel_type": "E",
     "post_code": "2000",

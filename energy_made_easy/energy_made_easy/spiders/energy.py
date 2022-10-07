@@ -10,7 +10,7 @@ import random
 
 class EnergySpider(scrapy.Spider):
     name = 'energy'
-    allowed_domains = ['www.energymadeeasy.gov.au']
+    allowed_domains = ['www.energymadeeasy.gov.au', "api.energymadeeasy.gov.au"]
     
     def __init__(self):
         
@@ -109,15 +109,17 @@ class EnergySpider(scrapy.Spider):
             
         if self.save_as_excel:
             pass
+        
         random_sleep = [3,4,5,6,7]
         if self.scrap_all_energy_plans_internal_data:        
             for plan in json_response:
                 time.sleep(random.choice(random_sleep))
-                plan_request_url = "https://api.energymadeeasy.gov.au/plans/dpids/" + plan["planId"] + "?postcode=" + plan["post_code"]
+                plan_request_url = "https://api.energymadeeasy.gov.au/plans/dpids/" + plan["planId"] + "?postcode=" + plan["postcode"]
                 yield scrapy.Request(plan_request_url, method="GET", headers=self.headers, callback=self.parse_price_plans)
         
     def parse_price_plans(self, response):
         response = json.loads(response.body)
+        
         if self.save_as_json:
             save_plan_data_to_json(response)
         
